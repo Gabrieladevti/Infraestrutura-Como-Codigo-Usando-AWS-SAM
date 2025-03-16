@@ -60,6 +60,6 @@ aws cloudformation delete-stack --stack-name my-sam-app
 ## Conclusão
 Este laboratório abordou a configuração e o uso do AWS SAM para desenvolver e implantar aplicações serverless. Explore mais funcionalidades no [AWS SAM Documentation](https://docs.aws.amazon.com/serverless-application-model/).
 
----
-© 2025 Seu Nome
+
+
 
