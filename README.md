@@ -1,1 +1,1 @@
-# Infraestrutura-Como-C-digo-Usando-AWS-SAM
+# Infraestrutura-Como-Codígo-Usando-AWS-SAM
