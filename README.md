@@ -1,64 +1,46 @@
-# Infraestrutura-Como-Codígo-Usando-AWS-SAM
+# Azure OpenAI Playground
 
 ## Introdução
-Este laboratório explora o AWS Serverless Application Model (SAM), um framework para desenvolvimento de aplicações serverless na nuvem da AWS. O AWS SAM simplifica a definição e implantação de recursos serverless, como AWS Lambda, API Gateway, DynamoDB, entre outros.
+Este repositório contém um resumo do aprendizado prático com o Azure OpenAI Playground, conforme solicitado no desafio do Bootcamp Microsoft AI for Tech - OpenAI Services.
 
-## Pré-requisitos
-Antes de iniciar, certifique-se de ter os seguintes requisitos instalados:
-- AWS CLI configurada
-- AWS SAM CLI
-- Docker (para testes locais)
+## 📌 Tópicos Abordados
 
-## Instalação do AWS SAM CLI
-Caso ainda não tenha instalado, siga as instruções oficiais:
-```sh
-curl -Lo aws-sam-cli.zip https://github.com/aws/aws-sam-cli/releases/latest/download/aws-sam-cli-linux-x86_64.zip
-unzip aws-sam-cli.zip -d sam-installation
-sudo ./sam-installation/install
-sam --version
-```
+### 🔹 Configuração e Implantação do Azure OpenAI
+- Configuração e implantação de um recurso Azure OpenAI.
+- Permissões (Admin) e pré-requisitos (conta Azure válida e créditos).
 
-## Criando um Novo Projeto SAM
-Para criar uma nova aplicação serverless com o AWS SAM:
-```sh
-sam init
-```
-Siga os prompts para escolher o template e linguagem desejados.
+### 🔹 Parque de Diversões OpenAI do Azure
+- Exploração da interface do Playground e suas funcionalidades para geração de conteúdo.
+- Importância do entendimento dos parâmetros para melhorar as respostas.
 
-## Estrutura do Projeto
-Após a inicialização, o projeto terá a seguinte estrutura:
-```
-my-sam-app/
-│   README.md
-│   template.yaml  # Definição da infraestrutura
-└───hello-world/
-    │   app.py  # Código da função Lambda
-    │   requirements.txt  # Dependências
-```
+### 🔹 Parâmetros Principais
+Descrição dos principais parâmetros do Playground e seu impacto na geração de texto:
+- **Temperatura e Top P**: Controle da criatividade e previsibilidade das respostas.
+- **Tokens Máximos**: Limitação do comprimento da resposta.
+- **Penalidades (Frequência e Presença)**: Ajustes para evitar repetições ou estimular a diversidade.
+- **Mensagem do Sistema**: Definição do comportamento base do modelo.
 
-## Construção e Deploy
-### Teste Local
-Para testar a função Lambda localmente:
-```sh
-sam build
-sam local invoke "HelloWorldFunction"
-```
+### 🔹 Mensagem do Sistema
+- Importância da Mensagem do Sistema para orientar o modelo.
+- Exemplos de uso, incluindo Zero-Shot Prompting.
 
-### Deploy para AWS
-Para implantar a aplicação na AWS:
-```sh
-sam deploy --guided
-```
-Isso configurará automaticamente os recursos necessários na AWS.
+### 🔹 Multimodalidade
+- Capacidade do Azure OpenAI de gerar texto, imagens (DALL·E) e áudio.
+- Dicas para gerar imagens de qualidade.
 
-## Removendo a Aplicação
-Caso deseje remover a aplicação da AWS:
-```sh
-aws cloudformation delete-stack --stack-name my-sam-app
-```
+### 🔹 Melhores Práticas
+- Inicie com os valores padrão e ajuste um parâmetro por vez.
+- Documente os resultados e itere com base no feedback.
 
-## Conclusão
-Este laboratório abordou a configuração e o uso do AWS SAM para desenvolver e implantar aplicações serverless. Explore mais funcionalidades no [AWS SAM Documentation](https://docs.aws.amazon.com/serverless-application-model/).
+### 🔹 Aplicações Práticas
+Exemplos de uso real do Playground:
+- Criação de um blob.
+- Desenvolvimento de um chat CLI.
+- Geração de áudio e imagens.
+
+## 📖 Referências
+Para mais informações, explore a [documentação do Azure OpenAI](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/).
+
 
 
 
